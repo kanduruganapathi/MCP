@@ -1,0 +1,106 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8f9fa" rx="10" ry="10" />
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" font-weight="bold">Traditional vs. MCP Interaction</text>
+  
+  <!-- Divider -->
+  <line x1="400" y1="70" x2="400" y2="470" stroke="#ddd" stroke-width="2" stroke-dasharray="5,5" />
+  
+  <!-- Section Titles -->
+  <text x="200" y="90" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" font-weight="bold">Traditional Approach</text>
+  <text x="600" y="90" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" font-weight="bold">MCP Approach</text>
+  
+  <!-- Traditional Side -->
+  <g id="traditional">
+    <!-- User and Model -->
+    <circle cx="120" cy="150" r="30" fill="#e3f2fd" stroke="#1976d2" stroke-width="2" />
+    <text x="120" y="155" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">User</text>
+    
+    <circle cx="280" cy="150" r="30" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2" />
+    <text x="280" y="155" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">LLM</text>
+    
+    <!-- Messaging -->
+    <rect x="150" y="130" width="100" height="40" fill="white" stroke="#bbb" stroke-width="1" rx="5" ry="5" />
+    <text x="200" y="155" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">Text Prompt</text>
+    
+    <!-- Context limitation visualization -->
+    <rect x="80" y="200" width="240" height="120" fill="white" stroke="#bbb" stroke-width="1" rx="5" ry="5" />
+    <text x="200" y="220" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" font-weight="bold">Limited Context Window</text>
+    
+    <!-- Context blocks -->
+    <rect x="100" y="235" width="200" height="25" fill="#f5f5f5" stroke="#bbb" stroke-width="1" />
+    <text x="200" y="252" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">Most Recent Messages Only</text>
+    
+    <rect x="100" y="265" width="200" height="25" fill="#f5f5f5" stroke="#bbb" stroke-width="1" />
+    <text x="200" y="282" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">Fixed Token Limit</text>
+    
+    <rect x="100" y="295" width="200" height="25" fill="#f5f5f5" stroke="#bbb" stroke-width="1" opacity="0.5" />
+    <text x="200" y="312" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" opacity="0.5">Earlier Context Lost</text>
+    
+    <!-- Limitations -->
+    <rect x="80" y="340" width="240" height="120" fill="white" stroke="#bbb" stroke-width="1" rx="5" ry="5" />
+    <text x="200" y="360" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" font-weight="bold">Limitations</text>
+    
+    <text x="100" y="385" font-family="Arial, sans-serif" font-size="12" text-anchor="start">• Context amnesia between sessions</text>
+    <text x="100" y="410" font-family="Arial, sans-serif" font-size="12" text-anchor="start">• No standardized data exchange</text>
+    <text x="100" y="435" font-family="Arial, sans-serif" font-size="12" text-anchor="start">• Limited to text-only interactions</text>
+  </g>
+  
+  <!-- MCP Side -->
+  <g id="mcp">
+    <!-- User and Model -->
+    <circle cx="520" cy="150" r="30" fill="#e3f2fd" stroke="#1976d2" stroke-width="2" />
+    <text x="520" y="155" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">User</text>
+    
+    <circle cx="680" cy="150" r="30" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2" />
+    <text x="680" y="155" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">LLM</text>
+    
+    <!-- MCP Layer -->
+    <rect x="550" y="130" width="100" height="40" fill="#fff8e1" stroke="#ffa000" stroke-width="2" rx="5" ry="5" />
+    <text x="600" y="155" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">MCP Layer</text>
+    
+    <!-- Context system visualization -->
+    <rect x="480" y="200" width="240" height="120" fill="white" stroke="#bbb" stroke-width="1" rx="5" ry="5" />
+    <text x="600" y="220" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" font-weight="bold">Enhanced Context Management</text>
+    
+    <!-- Context components -->
+    <rect x="500" y="235" width="200" height="25" fill="#e1f5fe" stroke="#0288d1" stroke-width="1" />
+    <text x="600" y="252" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">Active Working Memory</text>
+    
+    <rect x="500" y="265" width="200" height="25" fill="#e8f5e9" stroke="#2e7d32" stroke-width="1" />
+    <text x="600" y="282" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">Structured Metadata</text>
+    
+    <rect x="500" y="295" width="200" height="25" fill="#ede7f6" stroke="#673ab7" stroke-width="1" />
+    <text x="600" y="312" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">Persistent Memory Store</text>
+    
+    <!-- Advantages -->
+    <rect x="480" y="340" width="240" height="120" fill="white" stroke="#bbb" stroke-width="1" rx="5" ry="5" />
+    <text x="600" y="360" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" font-weight="bold">Advantages</text>
+    
+    <text x="500" y="385" font-family="Arial, sans-serif" font-size="12" text-anchor="start">• Cross-session context preservation</text>
+    <text x="500" y="410" font-family="Arial, sans-serif" font-size="12" text-anchor="start">• Structured protocol-based exchange</text>
+    <text x="500" y="435" font-family="Arial, sans-serif" font-size="12" text-anchor="start">• Multi-modal context integration</text>
+  </g>
+  
+  <!-- Data flow arrows -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666" />
+    </marker>
+  </defs>
+  
+  <!-- Traditional flow -->
+  <line x1="150" y1="140" x2="250" y2="140" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)" />
+  <line x1="250" y1="160" x2="150" y2="160" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)" />
+  
+  <!-- MCP flow -->
+  <line x1="550" y1="140" x2="580" y2="140" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)" />
+  <line x1="620" y1="140" x2="650" y2="140" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)" />
+  <line x1="650" y1="160" x2="620" y2="160" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)" />
+  <line x1="580" y1="160" x2="550" y2="160" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)" />
+  
+  <!-- Connecting to persistent storage -->
+  <line x1="600" y1="320" x2="600" y2="340" stroke="#673ab7" stroke-width="1.5" stroke-dasharray="3,3" />
+</svg>
